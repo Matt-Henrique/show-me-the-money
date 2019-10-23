@@ -1091,6 +1091,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
   background: rgba(255, 255, 255, 0.5);
   height: 160px;
+  max-width: 300px;
 }
 
 #supporters .supporter-logo:hover img {
@@ -1100,6 +1101,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #supporters img {
   transition: all 0.4s ease-in-out;
+}
+
+#supporters-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 /*--------------------------------------------------------------
@@ -1631,6 +1639,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 28px;
+  }
+
   .back-to-top {
     bottom: 15px;
   }
